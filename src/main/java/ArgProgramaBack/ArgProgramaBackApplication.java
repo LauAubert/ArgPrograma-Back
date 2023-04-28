@@ -1,4 +1,4 @@
-package com.example.argprogramaback;
+package ArgProgramaBack;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ArgProgramaBackApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ArgProgramaBackApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(ArgProgramaBackApplication.class, args);
+	}
 
 }
