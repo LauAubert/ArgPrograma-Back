@@ -10,7 +10,9 @@ public class Experience {
     private Long id;
 
     private String ano;
-
+    
+    @Lob
+    @Column(columnDefinition="TEXT")
     private String descripcion;
 
     private String imagen;
