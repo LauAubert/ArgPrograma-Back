@@ -58,5 +58,10 @@ public class ExperienceController {
         experienceService.deleteExperience(id);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
+
+    @GetMapping("/{tipo}")
+    public List<Experience> getExperiencesByTipo(@PathVariable String tipo) {
+        return experienceService.getExperiencesByType(tipo);
+    }
 }
 

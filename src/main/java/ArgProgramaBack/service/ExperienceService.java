@@ -41,4 +41,8 @@ public class ExperienceService {
         repository.deleteById(id);
     }
 
+    public List<Experience> getExperiencesByType(String tipo) {
+        return repository.findByTipo(tipo);
+    }
+
 }
