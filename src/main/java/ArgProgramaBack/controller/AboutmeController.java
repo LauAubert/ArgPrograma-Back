@@ -49,7 +49,7 @@ public class AboutmeController {
     }
 
     
-    @PutMapping("/{id}")
+    @PostMapping("/{id}")
     public ResponseEntity<Aboutme> updateAboutme(@PathVariable Long id, @RequestBody Aboutme aboutme, @RequestHeader("Authorization") String token) {
         // Verificar si el token es válido
         if (!LoginService.validarJwt(token)) {
