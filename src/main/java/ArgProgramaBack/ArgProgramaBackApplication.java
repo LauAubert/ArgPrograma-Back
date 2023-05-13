@@ -19,8 +19,9 @@ public class ArgProgramaBackApplication {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-					.allowedOrigins("http://localhost:4200")
+					.allowedOrigins("http://localhost:4200", "https://argprograma-front-laubert.web.app")
 					.allowCredentials(true)
+					.allowedHeaders("*")
 					.allowedMethods("GET", "POST", "PUT", "DELETE");
 			}
 		};

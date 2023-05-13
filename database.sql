@@ -8,6 +8,7 @@ CREATE TABLE Experience
     Imagen      VARCHAR(255),
     ano         VARCHAR(4),
     descripcion TEXT
+	tipo 		VARCHAR(20)
 );
 
 CREATE TABLE Skill
@@ -38,5 +39,5 @@ CREATE TABLE Educacion
     logo        VARCHAR(255),
     carrera     VARCHAR(100),
     ano         VARCHAR(4),
-    descripcion TEXT
+    institucion VARCHAR(100)
 );
